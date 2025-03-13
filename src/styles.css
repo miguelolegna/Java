@@ -1,0 +1,104 @@
+/* Reset e Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #4a90e2; /* Azul fixo */
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffcc00;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Layout Principal */
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Cards de Jogos */
+.games-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.game-card {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+/* Formulário de Suporte */
+.support {
+  background: #222;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.support form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.support select, .support textarea, .support button {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.support textarea {
+  height: 80px;
+}
+
+.support button {
+  background: #ffcc00;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.support button:hover {
+  background: #e6b800;
+}
