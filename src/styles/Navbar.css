@@ -1,0 +1,31 @@
+/* Estilos da Navbar */
+.navbar {
+    background: #ffcc00;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 🔥 Centraliza verticalmente */
+    height: 60px; /* 🔥 Garante alinhamento correto */
+  }
+  
+  /* Estiliza o título principal */
+  .navbar-title {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold; /* 🔥 Destaque maior */
+  }
+  
+  /* Estiliza os links */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+  }
+      

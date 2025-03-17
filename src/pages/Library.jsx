@@ -1,18 +1,21 @@
-import React from "react";
-import GameCard from "../components/GameCard";
+import { Link } from "react-router-dom";
+import gamesData from "../data/gamesData";
 
 export default function Library() {
-  const games = [
-    { title: "Jogo 1", image: "/game1.jpg", plays: 1200 },
-    { title: "Jogo 2", image: "/game2.jpg", plays: 950 },
-  ];
-
   return (
-    <div className="library">
-      <h2>Biblioteca de Jogos</h2>
-      <div className="games-grid">
-        {games.map((game, index) => (
-          <GameCard key={index} {...game} />
+    <div style={{ textAlign: "center", padding: "20px" }}>
+      <h1>Biblioteca de Jogos</h1>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
+        {gamesData.map((game) => (
+          <div key={game.id} style={{ border: "1px solid #ccc", padding: "10px" }}>
+            <h2>{game.name}</h2>
+            <p>{game.description}</p>
+            <Link to={`/game/${game.id}`}>
+              <button style={{ padding: "10px", background: "blue", color: "white" }}>
+                Jogar Agora
+              </button>
+            </Link>
+          </div>
         ))}
       </div>
     </div>

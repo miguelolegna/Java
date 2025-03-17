@@ -12,7 +12,7 @@ export default function Support() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const email = "seuemail@exemplo.com"; // Substituir pelo seu email
+    const email = "miguel.olegna1@gmail.com"; // Substituir pelo seu email
     const subject = `Suporte - ${formData.game}`;
     const body = encodeURIComponent(formData.message);
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
@@ -23,7 +23,7 @@ export default function Support() {
       <h3>Precisa de ajuda?</h3>
       <form onSubmit={handleSubmit}>
         <select name="game" value={formData.game} onChange={handleChange}>
-          <option value="site">Site inteiro</option>
+          <option value="site">Bug Geral</option>
           <option value="jogo1">Jogo 1</option>
           <option value="jogo2">Jogo 2</option>
           <option value="jogo3">Jogo 3</option>
