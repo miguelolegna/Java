@@ -1,0 +1,94 @@
+/* src/styles/Support.css */
+
+/* Contêiner geral da página de suporte */
+.support-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 24px;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título principal */
+  .support-container h1 {
+    text-align: center;
+    font-size: 1.875rem; /* 3xl */
+    font-weight: 600;
+    color: #2d3748; /* text-gray-800 */
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+  
+  /* Subtítulo com instruções */
+  .support-container p {
+    text-align: center;
+    font-size: 1.125rem; /* text-lg */
+    color: #4a5568; /* text-gray-600 */
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+  
+  /* Mensagem de erro e sucesso */
+  .support-container p.error {
+    color: #f56565; /* text-red-500 */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .support-container p.success {
+    color: #48bb78; /* text-green-500 */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Formulário de suporte */
+  .support-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* space-y-5 */
+  }
+  
+  /* Estilo para os campos de seleção e texto */
+  .support-form select,
+  .support-form textarea {
+    padding: 0.75rem; /* p-3 */
+    border: 1px solid #e2e8f0; /* border */
+    border-radius: 8px; /* rounded */
+    width: 100%;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .support-form select:focus,
+  .support-form textarea:focus {
+    outline: none;
+    border-color: #3182ce; /* focus:ring-blue-500 */
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5); /* focus:ring-2 */
+  }
+  
+  /* Botão de envio */
+  .support-form button {
+    background-color: #3182ce; /* bg-blue-500 */
+    color: white;
+    padding: 1rem; /* p-3 */
+    border-radius: 8px; /* rounded */
+    width: 100%;
+    font-size: 1.125rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .support-form button:hover {
+    background-color: #2b6cb0; /* hover:bg-blue-600 */
+  }
+  
+  .support-form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5); /* focus:ring-2 */
+  }
+  
+  /* Estilos para o ícone de erro */
+  .support-container .error-icon {
+    font-size: 2rem; /* text-2xl */
+    color: #e53e3e; /* text-red-500 */
+  }
+  

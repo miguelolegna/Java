@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar">
       <Link to="/" className="navbar-title">
         🎮 Jogos Java
-      </Link>
+      </Link> 
       <div className="navbar-links">
         <Link to="/library">Biblioteca</Link>
         <Link to="/login">Login</Link>

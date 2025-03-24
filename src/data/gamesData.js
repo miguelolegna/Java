@@ -1,17 +1,16 @@
 const gamesData = [
-    {
-      id: "tictactoe",
-      name: "Jogo do Galo",
-      description: "Um jogo clássico para dois jogadores!",
-      url: "http://localhost:8080/TicTacToe",
-    },
-    {
-      id: "snake",
-      name: "Jogo da Cobrinha",
-      description: "Controle a cobra e coma os pontos sem bater nas paredes!",
-      url: "http://localhost:8080/SnakeGame",
-    }
-  ];
-  
-  export default gamesData;
-  
+  {
+    id: "tictactoe",
+    name: "Jogo do Galo",
+    description: "Clássico jogo da velha para dois jogadores.",
+    url: "/games/TicTacToe/index.html",  // Removido "public/"
+  },
+  {
+    id: "snake",
+    name: "Snake",
+    description: "Joga e sobrevive o máximo de tempo possível.",
+    url: "/games/snake/index.html",
+  },
+];
+
+export default gamesData;  // Adicionado export default
